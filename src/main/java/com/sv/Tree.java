@@ -45,6 +45,9 @@ public class Tree<E extends Comparable<E>> {
         return (value.compareTo(current.data) < 0) ? containsTreeNode(current.left, value) : containsTreeNode(current.right, value);
     }
 
+    private TreeNode<E> getParents (TreeNode<E> current) {
+        return root; //TODO: get all the parents of this node
 
+    }
 }
 
