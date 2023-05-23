@@ -7,9 +7,9 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @NoArgsConstructor
+@ToString
 public class Keyword {
 
     private String name;
-
 
 }

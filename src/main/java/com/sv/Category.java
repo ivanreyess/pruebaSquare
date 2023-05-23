@@ -9,10 +9,16 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Category {
+@ToString
+public class Category implements Comparable<Category> {
 
     private String name;
 
     private List<Keyword> keywords;
 
+
+    @Override
+    public int compareTo(Category o) {
+        return  o.getName().compareTo(this.getName());
+    }
 }
